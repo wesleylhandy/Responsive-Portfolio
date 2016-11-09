@@ -1,0 +1,228 @@
+html, 
+body {
+	height: 100%;
+}
+
+body {
+	color: #777777;
+	background-color: #ffffff;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+header {
+	width: 960px;
+	margin: auto;
+	background-image: none;
+}
+
+h1, 
+h2, 
+#name {
+	font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+h1, 
+h2 {
+	color: #4aaaa5;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 22px;
+	text-align: center;
+}
+
+#name {
+	background-color: #4aaaa5;
+	color: white;
+	width: 270px;
+	float:left;
+	text-align: center;
+	padding: 20px;
+	font-size: 32px;
+}
+
+nav {
+	float: right;
+	text-align: center;
+	padding: 20px;
+
+}
+
+#current {
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+.nav-button {
+	float: right;
+	padding: 5px;
+}
+
+.pipe {
+	float: right;
+	padding: 5px;
+}
+
+#container {
+	clear: both;
+	background: url("../images/subtle_stripes/subtle_stripes_@2X.png") /*no-repeat center center fixed*/;
+	/*background-size: cover;*/
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	border-top-width: 3px;
+	min-height: 100%;
+	margin: 0 auto -15px;
+}
+
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 20px;
+	
+}
+
+aside, 
+article {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+}
+
+aside {
+	float: right;
+	width: 210px;
+	padding: 20px;
+	margin: 10px 0px 10px 10px;
+	
+}
+
+article {
+	float:left;
+	width: 590px;
+	padding: 20px;
+	margin: 10px 10px 10px 0px;
+	
+}
+
+#profile-pic {
+	clear: both;
+	width: 150px;
+	float: left;
+	padding-top: 10px;
+}
+
+.port-pic {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.port-label {
+	position: absolute;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	bottom: 25px;
+	width: 255px;
+}
+
+#left-port {
+	float:left;
+}
+
+#right-port {
+	float:right;
+}
+
+.about-txt {
+	float: left;
+	width: 420px;
+	padding: 10px;
+}
+
+.about-txt p {
+	margin-bottom: 15px;
+}
+
+.connect-btn {
+
+	width: 60px;
+	margin: 3px;
+}
+
+.connect-btn:hover {
+	filter: drop-shadow(2px 2px 0px #4aaaa5);	
+}
+
+input {
+	color: #777777;
+	width: 585px;
+	padding: 5px 0px 5px 0px;
+	font-size: 18px;
+}
+
+.form-label {
+	padding: 10px 0px 10px 0px;
+}
+
+#msg-entry {
+	margin-bottom: 10px;
+}
+
+#submit-button {
+	width: 110px;
+	background-color: #ffffff;
+	color: #4aaaa5;
+	border: 2px solid #4aaaa5;
+	transition-duration: 0.4s;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+}
+
+#submit-button:hover {
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+hr {
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #777777;
+}
+
+footer {
+	border-top-style: solid;
+	border-top-color: #4aaaa5;
+	border-top-width: 10px;
+	text-align: center;
+	background-color: #666666;
+	padding: 20px;
+	color: #dddddd;
+}
+
+footer, .push {
+	height: 35px;
+	clear: both;
+}
