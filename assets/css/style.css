@@ -80,6 +80,10 @@ h2 {
 	font-size: 200%;
 }
 
+em {
+	font-style: italic;
+}
+
 nav {
 	float: right;
 	text-align: center;
