@@ -2,7 +2,7 @@
 
 html, 
 body {
-	height: 43.75em; 
+	height: 100%; 
 	/* height could be set to 100% to keep footer at very bottom of page 
 	with no whitespace beneath. 43.75em is 700px converted to em at 16px/em.
 	This keeps footer at a set position so footer is closer to content on 
@@ -34,31 +34,6 @@ h2,
 h1, 
 h2 {
 	color: #4aaaa5;
-}
-
-@media only screen and (max-width: 980px) {
-	body {
-		font-size: 85%;
-		
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	body {
-		font-size: 70%;
-		
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	body {
-		font-size: 55%;
-		
-	}
-
-	header {
-		position: static;
-	}
 }
 
 h1 {
@@ -134,6 +109,9 @@ a:hover {
 	width: 100%;
 }
 
+em {
+	font-style: italic;
+}
 
 #main {
 	width: 60em;
@@ -150,19 +128,19 @@ article {
 	background-color: #ffffff;
 }
 
-aside {
-	float: right;
-	width: 21.875%; /* 210 / 960 inheritance from #main */
-	padding: 1.25em;
-	margin: 0.625em 0px 0.625em 0.625em;
-	
-}
-
 article {
 	float:left;
 	width: 61.458%; /* (590 / 960) inheritance from #main */
 	padding: 1.25em;
 	margin: 0.625em 0.625em 0.625em 0em;
+	
+}
+
+aside {
+	float: right;
+	width: 21.875%; /* 210 / 960 inheritance from #main */
+	padding: 1.25em;
+	margin: 0.625em 0px 0.625em 0.625em;
 	
 }
 
@@ -277,3 +255,184 @@ footer, .push {
 	clear: both;
 }
 
+@media screen and (max-width: 980px) {
+	body {
+		font-size: 90%;
+	}
+
+	.about-txt {
+		font-size: 110%;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 80%;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 175%;
+	}
+
+	.about-txt {
+		font-size: 120%;
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+	body {
+		font-size: 75%;
+	}
+
+	#main, header {
+		width: 40em; /*(640/16)*/
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 175%;
+	}
+
+	#name {
+		width: 50%;
+	}
+
+	#container {
+		margin:0;
+	}
+
+	#main {
+		padding-top: 0;
+		margin: 0 auto;
+	}
+	
+	article, aside {
+		float: none;
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	article {
+		height: 21em;
+	}
+
+	aside {
+		clear: both;
+	}
+
+	#profile-pic {
+		width: 26%;
+	}
+
+	.about-txt {
+		width: 70%;
+		font-size: 125%;
+	}
+
+	#submit-button {
+		width: 40%;
+	}
+
+	.connect-btn {
+		width: 18%;
+		padding: 0 2.5em 0 2.5em;
+	}
+
+	.push {
+		display : none;
+	}
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+	body {
+		font-size: 70%;
+	}
+
+	#main, header {
+		width: 20em; /*(320/16)*/
+		margin: 0;
+	}
+
+
+	header {
+		position: static;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 175%;
+	}
+
+	#name, nav {
+		float: none;
+		width: 100%;
+	}
+
+	nav, .pipe {
+		padding-top: 0;
+	}
+
+	.nav-button, .pipe {
+		margin: 0 2em 0 0;
+
+	}
+
+	#current {
+		color: #777777;
+		background-color: #fff;
+	}
+
+	#container {
+		margin:0;
+		
+	}
+
+	#main {
+		padding-top: 0;
+		margin: 0 auto;
+	}
+	
+	article, aside {
+		float: none;
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	aside {
+		clear: both;
+	}
+
+	#left-port, #right-port, #profile-pic, .about-txt {
+		float: none;
+		width: 100%;
+	}
+
+	.about-txt {
+		font-size: 125%;
+	}
+
+	#submit-button {
+		width: 40%;
+	}
+
+	.push {
+		display : none;
+	}
+}
