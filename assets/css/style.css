@@ -87,15 +87,11 @@ a:hover {
     color: #4aaaa5;
 }
 
-.nav-button {
-	float: right;
+.nav-button, .pipe {
+	display: inline-block;
 	padding: 0.52083%; /* ( 5 / 960) */
 }
 
-.pipe {
-	float: right;
-	padding: 0.52083%;
-}
 
 #container {
 	clear: both;
@@ -386,11 +382,6 @@ footer, .push {
 
 	nav, .pipe {
 		padding-top: 0;
-	}
-
-	.nav-button, .pipe {
-		margin: 0 2em 0 0;
-
 	}
 
 	#current {
