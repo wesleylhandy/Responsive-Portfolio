@@ -65,7 +65,7 @@ nav {
 	float: right;
 	text-align: center;
 	padding: 2.0833%; /* inheritance from header */
-	width: 13em;
+	width: 24.375%; /*( 234 / 960)*/
 	margin-top: 1.0466%;
 
 }
@@ -264,7 +264,7 @@ footer, .push {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
 	body {
 		font-size: 80%;
 	}
@@ -281,7 +281,29 @@ footer, .push {
 		font-size: 120%;
 		width: 70%;
 	}
+}
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	body {
+		font-size: 80%;
+	}
+
+	header, #main {
+		width: 48em; /* ( 768 / 16) */
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	h2 {
+		font-size: 175%;
+	}
+
+	.about-txt {
+		font-size: 120%;
+		width: 70%;
+	}
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
@@ -289,8 +311,9 @@ footer, .push {
 		font-size: 75%;
 	}
 
-	#main, header {
-		width: 40em; /*(640/16)*/
+	header, #main {
+		position: static;
+		width: 100%;
 		margin: 0;
 	}
 
@@ -307,6 +330,7 @@ footer, .push {
 	}
 
 	#container {
+		width: 100%;
 		margin:0;
 	}
 
@@ -323,7 +347,7 @@ footer, .push {
 	}
 
 	article {
-		height: 21em;
+		height: 27.5em;
 	}
 
 	aside {
@@ -335,7 +359,7 @@ footer, .push {
 	}
 
 	.about-txt {
-		width: 70%;
+		width: 68%;
 		font-size: 125%;
 	}
 
@@ -344,8 +368,8 @@ footer, .push {
 	}
 
 	.connect-btn {
-		width: 18%;
-		padding: 0 2.5em 0 2.5em;
+		width: 25%;
+		padding: 0 3% 0 3%;
 	}
 
 	.push {
@@ -358,15 +382,10 @@ footer, .push {
 		font-size: 70%;
 	}
 
-	#main, header {
-		width: 20em; /*(320/16)*/
-		margin: 0;
-	}
-
-
-	header {
+	header, #main {
 		position: static;
 		width: 100%;
+		margin: 0;
 	}
 
 	h1 {
@@ -406,19 +425,28 @@ footer, .push {
 		width: 100%;
 		margin: 0;
 		display: block;
+		padding: 1em;
 	}
 
 	aside {
 		clear: both;
 	}
 
-	#left-port, #right-port, #profile-pic, .about-txt {
+	#left-port, #right-port {
 		float: none;
 		width: 100%;
 	}
 
 	.about-txt {
-		font-size: 125%;
+		float: none;
+		font-size: 135%;
+		width: 92.5%;
+		padding: 0.635em 0 0 0;
+	}
+
+	#profile-pic {
+		float: none;
+		width: 92.5%;
 	}
 
 	#submit-button {
