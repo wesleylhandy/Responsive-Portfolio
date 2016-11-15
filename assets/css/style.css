@@ -22,7 +22,7 @@ body {
 }
 
 header {
-	width: 60em; /* ( 960px / 16px/em) same on #main */
+	max-width: 60em; /* ( 960px / 16px/em) same on #main */
 	margin: auto;
 	background-image: none;
 }
@@ -112,7 +112,7 @@ em {
 }
 
 #main {
-	width: 60em;
+	max-width: 60em;
 	margin: 0 auto;
 	padding-top: 1.250em;
 	
@@ -289,7 +289,7 @@ footer, .push {
 	}
 
 	header, #main {
-		width: 48em; /* ( 768 / 16) */
+		max-width: 48em; /* ( 768 / 16) */
 	}
 
 	h1 {
