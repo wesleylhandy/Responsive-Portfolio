@@ -11,7 +11,7 @@ body {
 	smaller screens. This should be reset to 100% if more portfolio images
 	are added */
 
-	width: 100%; /*not sure if this is needed here */
+	max-width: 100%; /*not sure if this is needed here */
 }
 
 body {
@@ -347,7 +347,7 @@ footer, .push {
 	}
 
 	article {
-		height: 27.5em;
+		height: auto;
 	}
 
 	aside {
@@ -355,12 +355,26 @@ footer, .push {
 	}
 
 	#profile-pic {
+		float: none;
 		width: 26%;
+		display: inline-block;
+	}
+
+	#left-port, #right-port {
+		float: none;
+		width: 48%;
+		display: inline-block;
+	}
+
+	.port-pic {
+		display: inline-block;
 	}
 
 	.about-txt {
-		width: 68%;
+		float: none;
+		width: 67%;
 		font-size: 125%;
+		display: inline-block;
 	}
 
 	#submit-button {
